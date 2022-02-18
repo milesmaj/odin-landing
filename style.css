@@ -16,6 +16,13 @@ h1, h2, h3, h4, p, ul, li {
     padding: 0;
 }
 
+main > div {
+    display: flex;
+    width: 80%;
+    padding: 20px 10%;
+    min-height: 50%;
+}
+
 header, main > div:first-of-type, footer {
     background-color: #1f2937;
 }
@@ -24,16 +31,77 @@ main > div:first-of-type h1, header h3 {
     color: #f9faf8;
 }
 
-main > div:first-of-type h4, header li, footer {
+main > div:first-of-type p, header li, footer {
     color: #e5e7eb;
+}
+
+header, main, footer {
+    display: flex;
+}
+
+header {
+    padding: 20px 10%;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    flex-direction: column;
+}
+
+main > div:first-of-type {
+    justify-content: center;
+    align-items: center;
+}
+
+main > div:first-of-type img {
+    max-width: 50%;
+}
+
+main > div:first-of-type h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+main > div:nth-of-type(2) {
+    flex-direction: column;
+}
+
+main > div:nth-of-type(2) > h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
 }
 
 #ctl-box {
     background-color: #3882f6;
 }
 
+#random-info-box {
+    display: flex;
+}
+
 #random-info-box img {
-    max-width: 200px;
+    max-width: 150px;
+    border: 5px solid #3882f6;
+    background-color: #3882f6;
+    border-radius: 25px;
+}
+
+#quote-box {
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-style: italic;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#quote-box > p:last-of-type {
+    font-style: normal;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 button {
@@ -47,4 +115,15 @@ button {
 footer {
     text-align: center;
     padding: 50px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    padding: 0px 10px;
 }

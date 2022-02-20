@@ -4,6 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 a {
@@ -19,7 +20,7 @@ h1, h2, h3, h4, p, ul, li {
 main > div {
     display: flex;
     width: 80%;
-    padding: 20px 10%;
+    padding: 100px 10%;
     min-height: 50%;
 }
 
@@ -55,8 +56,23 @@ main > div:first-of-type {
     align-items: center;
 }
 
+main > div:first-of-type button {
+    color: white;
+    background-color: #3882f6;
+    border-color: #3882f6;
+}
+
+main > div:first-of-type > div {
+    margin-right: 20px;
+}
+
+main > div:first-of-type > div > * {
+    margin-bottom: 20px;
+}
+
 main > div:first-of-type img {
     max-width: 50%;
+    margin-left: 20px;
 }
 
 main > div:first-of-type h1 {
@@ -77,10 +93,31 @@ main > div:nth-of-type(2) > h2 {
 
 #ctl-box {
     background-color: #3882f6;
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#ctl-box button {
+    border-color: white;
+    color: white;
+}
+
+#info-box {
+    text-align: center;
+}
+
+#info-box h2 {
+    margin: 25px 0;
 }
 
 #random-info-box {
     display: flex;
+    margin-bottom: 25px;
 }
 
 #random-info-box img {
@@ -102,6 +139,7 @@ main > div:nth-of-type(2) > h2 {
     font-style: normal;
     font-size: 24px;
     font-weight: bold;
+    text-align: right;
 }
 
 button {
